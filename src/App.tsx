@@ -18,13 +18,6 @@ function App() {
         "I've been searching for high-quality abstract images for my design projects, and I'm thrilled to have found this platform. The variety and depth of creativity are astounding!",
       avatar: defaultAvatar,
     },
-    {
-      user: "John Doe",
-      accountName: "@johndoe",
-      message:
-        "This platform is fantastic! The user experience is top-notch, and the design resources are invaluable.",
-      avatar: defaultAvatar,
-    },
   ];
 
   return (

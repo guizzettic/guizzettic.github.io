@@ -15,7 +15,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ card }) => {
           className="avatar"
         />
         <div>
-          <p className="user-name">{card.user}</p>
+          <h3 className="user-name">{card.user}</h3>
           <p className="account-name">{card.accountName}</p>
         </div>
       </div>

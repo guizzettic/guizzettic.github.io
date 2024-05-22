@@ -21,7 +21,7 @@ function App() {
   testimonialCard;
 
   return (
-    <div className="flex h-screen w-screen items-center justify-center bg-gradient-to-br from-white to-gray-300">
+    <div className="tablet:items-start flex h-screen w-screen justify-center bg-gradient-to-br from-white to-gray-300 pt-[200px]">
       <TestimonialCard user={testimonialCard} />
     </div>
   );

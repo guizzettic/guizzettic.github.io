@@ -6,7 +6,7 @@ interface TestimonialCardProps {
 // ring-opacity-100 border ring-0 ring-white
 const TestimonialCard: React.FC<TestimonialCardProps> = ({ user }) => {
   return (
-    <div className="flex h-[233px] w-[343px] flex-col items-start justify-around rounded-lg bg-white p-4">
+    <div className="flex h-[233px] w-[343px] flex-col items-start justify-around rounded-lg bg-white px-6 py-4 ring-2 ring-white ring-opacity-100">
       <div className="flex gap-3">
         <img
           src={user.avatar}

@@ -1,25 +1,26 @@
 import { IndividualCard } from "./App";
-import "./App.css";
 
 interface TestimonialCardProps {
-  card: IndividualCard;
+  user: IndividualCard;
 }
-
-const TestimonialCard: React.FC<TestimonialCardProps> = ({ card }) => {
+// ring-opacity-100 border ring-0 ring-white
+const TestimonialCard: React.FC<TestimonialCardProps> = ({ user }) => {
   return (
-    <div className="testimonial-card">
-      <div className="user-info">
+    <div className="flex h-[233px] w-[343px] flex-col items-start justify-around rounded-lg bg-white p-4">
+      <div className="flex gap-3">
         <img
-          src={card.avatar}
-          alt={`${card.user}'s avatar`}
-          className="avatar"
+          src={user.avatar}
+          alt={`${user.user}'s avatar`}
+          className="size-12"
         />
         <div>
-          <h3 className="user-name">{card.user}</h3>
-          <p className="account-name">{card.accountName}</p>
+          <h3 className="text-xl font-semibold tracking-wide text-neutral-900">
+            {user.user}
+          </h3>
+          <p className="text-sm text-neutral-600">{user.accountName}</p>
         </div>
       </div>
-      <p className="message">{card.message}</p>
+      <p className="tracking-wide text-neutral-600">{user.message}</p>
     </div>
   );
 };
